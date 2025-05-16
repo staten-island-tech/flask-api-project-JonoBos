@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Sol Number</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Martian Sol Number</h1>
+        <form action="{{ url_for('index') }}" method="post">
+            <label for="sol">Sol Number:</label>
+            <input type="number" id="sol" name="sol" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
